@@ -41,6 +41,7 @@ export default function Home() {
         <button className='btn-21 btn-skew'>Button</button>
         <button className='btn-22'>Hover Me</button>
         <button className='btn-23'>Hover Me</button>
+        <button className='btn-24 btn-glow'>Hover Me</button>
       </main>
     </main>
   );
