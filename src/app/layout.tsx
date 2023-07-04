@@ -15,7 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`text-slate-600 bg-slate-100 {inter.className} p-5 py-8`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
