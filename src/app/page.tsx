@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main className='max-w-screen-xl mx-auto'>
-      <h1 className='mt-5 mb-10 text-3xl text-center'>
+      <h1 className='mt-8 mb-12 text-3xl text-center'>
         Beautiful Button effects examples
       </h1>
       <main className='buttons-container'>

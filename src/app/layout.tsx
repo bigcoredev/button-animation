@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`text-slate-600 bg-slate-100 {inter.className} p-5 py-8`}
+        className={`text-slate-600 bg-slate-100 {inter.className} p-5 py-12`}
       >
         {children}
       </body>
