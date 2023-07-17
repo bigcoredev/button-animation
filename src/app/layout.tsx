@@ -25,9 +25,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={'text-slate-600 bg-slate-100 p-5 py-12'}>
-        {children}
-      </body>
+      <body className={'text-slate-600 bg-white px-5'}>{children}</body>
     </html>
   );
 }

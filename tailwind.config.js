@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', ...fontFamily.sans],
+        sans: ['CerebriSansPro', 'Inter', ...fontFamily.sans],
         bench: ['BenchNine', 'sans-serif'],
       },
       backgroundImage: {
