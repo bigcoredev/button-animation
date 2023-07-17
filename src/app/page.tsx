@@ -1,9 +1,16 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <main className="max-w-screen-xl mx-auto">
-      <h1 className="mt-8 mb-12 text-3xl text-center">
-        Beautiful Button effects examples
+      <h1 className="mt-8 text-3xl font-bold text-center capitalize sm:mt-16 text-slate-800">
+        Beautiful button animations
       </h1>
+      <p className="mt-5 mb-10 text-base text-center sm:mb-20 text-slate-800">
+        Hover or click on our buttons components to reveal mesmerizing hover
+        effects.
+      </p>
+
       <main className="buttons-container">
         <button className="btn-1">Hover Me</button>
         <button className="btn-2">Hover Me</button>
@@ -43,6 +50,15 @@ export default function Home() {
         <button className="btn-23">Hover Me</button>
         <button className="btn-24 btn-glow">Hover Me</button>
       </main>
+
+      <footer className="mt-12 mb-8 attribution">
+        <Link
+          href="https://github.com/vatsalsinghkv/image-animations"
+          target="_blank"
+        >
+          Design &amp; Built by Vatsal Singh
+        </Link>
+      </footer>
     </main>
   );
 }
