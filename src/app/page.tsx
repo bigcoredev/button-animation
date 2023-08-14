@@ -3,15 +3,15 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <main className="max-w-screen-xl mx-auto">
-      <h1 className="mt-8 text-3xl font-bold text-center capitalize sm:mt-16 text-slate-200">
+      <h1 className="mt-8 text-3xl font-bold text-center capitalize sm:mt-16">
         Beautiful button animations
       </h1>
-      <p className="mt-5 mb-10 text-base text-center sm:mb-20 text-slate-200">
+      <p className="mt-5 mb-10 text-base text-center sm:mb-20">
         Hover or click on our buttons components to reveal mesmerizing hover
         effects.
       </p>
 
-      <main className="buttons-container text-slate-200">
+      <main className="buttons-container">
         <button className="btn-1">Hover Me</button>
         <button className="btn-2 text-violet-500 before:bg-violet-500">
           Hover Me

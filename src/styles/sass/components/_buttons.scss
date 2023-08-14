@@ -834,7 +834,7 @@ button::before {
   border-radius: 0;
   background: none;
   box-shadow: none;
-  color: #03e9f4;
+  color: #172554;
   transition: all 0.5s;
   overflow: hidden;
 }
@@ -845,7 +845,7 @@ button::before {
   left: 0;
   right: 0;
   bottom: 0;
-  border: solid 1px #03e9f4;
+  border: solid 1px #172554;
   z-index: -1;
 }
 
@@ -857,7 +857,7 @@ button::before {
   transform: translate(-50%, -50%) rotate(-60deg);
   height: 350%;
   width: 8%;
-  background-color: #000;
+  background-color: #fff;
   transition: all 0.5s;
 }
 
@@ -867,7 +867,7 @@ button::before {
 
 .btn-20:hover span::before {
   width: 100%;
-  background-color: #03e9f4;
+  background-color: #172554;
   transform: translate(-50%, -50%) rotate(60deg);
 }
 
@@ -1002,7 +1002,7 @@ button::before {
 }
 
 .btn-glow {
-  background-color: #000;
+  background-color: #fff;
   transition: all 0.5s;
   // box-shadow: none;
 }
