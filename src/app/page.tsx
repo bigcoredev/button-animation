@@ -3,17 +3,19 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <main className="max-w-screen-xl mx-auto">
-      <h1 className="mt-8 text-3xl font-bold text-center capitalize sm:mt-16 text-slate-800">
+      <h1 className="mt-8 text-3xl font-bold text-center capitalize sm:mt-16 text-slate-200">
         Beautiful button animations
       </h1>
-      <p className="mt-5 mb-10 text-base text-center sm:mb-20 text-slate-800">
+      <p className="mt-5 mb-10 text-base text-center sm:mb-20 text-slate-200">
         Hover or click on our buttons components to reveal mesmerizing hover
         effects.
       </p>
 
-      <main className="buttons-container">
+      <main className="buttons-container text-slate-200">
         <button className="btn-1">Hover Me</button>
-        <button className="btn-2">Hover Me</button>
+        <button className="btn-2 text-violet-500 before:bg-violet-500">
+          Hover Me
+        </button>
         <button className="btn-3">Hover Me</button>
         <button className="btn-4">Hover Me</button>
         <button className="btn-5">Hover Me</button>
@@ -48,6 +50,13 @@ export default function Home() {
         <button className="btn-21 btn-skew">Button</button>
         <button className="btn-22">Hover Me</button>
         <button className="btn-23">Hover Me</button>
+        <button className="btn-25 btn-neon">
+          <span className="top"></span>
+          <span className="right"></span>
+          <span className="bottom"></span>
+          <span className="left"></span>
+          Hover Me
+        </button>
         <button className="btn-24 btn-glow">Hover Me</button>
       </main>
 
