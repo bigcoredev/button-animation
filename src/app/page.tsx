@@ -64,7 +64,7 @@ export default function Home() {
 
       <footer className="mt-12 mb-8 attribution">
         <Link
-          href="https://github.com/vatsalsinghkv/image-animations"
+          href="https://github.com/vatsalsinghkv/button-animations"
           target="_blank"
         >
           Design &amp; Built by Vatsal Singh
