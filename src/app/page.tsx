@@ -59,6 +59,7 @@ export default function Home() {
         </button>
         <button className="btn-24 btn-glow">Hover Me</button>
         <button className="btn-shake">Hover Me</button>
+        <button className="btn-animate">Hover Me</button>
       </main>
 
       <footer className="mt-12 mb-8 attribution">

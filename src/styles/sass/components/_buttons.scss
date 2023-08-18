@@ -173,10 +173,10 @@ button::before {
 .btn-6:is(:hover, :focus) {
   background-color: #ef4444;
   color: #fff;
-}
 
-.btn-6:is(:hover, :focus)::before {
-  transform: translateX(100%) rotate(45deg);
+  &::before {
+    transform: translateX(100%) rotate(45deg);
+  }
 }
 
 /* BUTTON-7 */
@@ -366,12 +366,12 @@ button::before {
   transition: all 0.5s;
 }
 
-.btn-11:hover::before {
+.btn-11:is(:hover, :focus)::before {
   transform: translateX(80%) scale(0) rotateY(360deg);
   opacity: 0;
 }
 
-.btn-11:hover::after {
+.btn-11:is(:hover, :focus)::after {
   transform: translateX(0) scale(1) rotateY(0deg);
   opacity: 1;
 }
@@ -411,14 +411,14 @@ button::before {
   box-shadow: 80px 0 0 #3b82f6;
 }
 
-.btn-12:hover::before {
+.btn-12:is(:hover, :focus)::before {
   left: 50%;
   opacity: 1;
   box-shadow: 30px 0 0 #3b82f6;
   transform: translateX(-50%) translateY(-50%);
 }
 
-.btn-12:hover::after {
+.btn-12:is(:hover, :focus)::after {
   right: 50%;
   opacity: 1;
   box-shadow: -30px 0 0 #3b82f6;
@@ -438,12 +438,12 @@ button::before {
   z-index: -1;
 }
 
-.btn-12:hover {
+.btn-12:is(:hover, :focus) {
   transition-delay: 0.4s;
   color: #fff;
 }
 
-.btn-12:hover span {
+.btn-12:is(:hover, :focus) span {
   transform: scale(1);
 }
 
@@ -486,15 +486,15 @@ button::before {
   mix-blend-mode: multiply;
 }
 
-.btn-13:hover {
+.btn-13:is(:hover, :focus) {
   color: #334155;
 }
 
-.btn-13:hover::before {
+.btn-13:is(:hover, :focus)::before {
   transform: rotateX(75deg);
 }
 
-.btn-13:hover::after {
+.btn-13:is(:hover, :focus)::after {
   transform: rotateX(-75deg);
 }
 
@@ -513,7 +513,7 @@ button::before {
   transition: all 0.5s;
 }
 
-.btn-14:hover {
+.btn-14:is(:hover, :focus) {
   color: #fff;
 }
 
@@ -537,7 +537,7 @@ button::before {
   top: 0;
 }
 
-.btn-14:hover::before {
+.btn-14:is(:hover, :focus)::before {
   left: 0;
 }
 
@@ -547,7 +547,7 @@ button::before {
   left: 25%;
 }
 
-.btn-14:hover::after {
+.btn-14:is(:hover, :focus)::after {
   top: 0;
 }
 
@@ -557,7 +557,7 @@ button::before {
   right: 25%;
 }
 
-.btn-14:hover span::before {
+.btn-14:is(:hover, :focus) span::before {
   top: 0;
 }
 
@@ -567,7 +567,7 @@ button::before {
   right: -25%;
 }
 
-.btn-14:hover span::after {
+.btn-14:is(:hover, :focus) span::after {
   right: 0;
 }
 
@@ -603,11 +603,11 @@ button::before {
   /* transition-delay: 0.2s; */
 }
 
-.btn-15:hover::before {
+.btn-15:is(:hover, :focus)::before {
   transform: rotateY(180deg);
 }
 
-.btn-15:hover::after {
+.btn-15:is(:hover, :focus)::after {
   transform: rotateX(-180deg);
 }
 
@@ -647,8 +647,8 @@ button::before {
   border-right: 2px solid #f97316;
 }
 
-.btn-16:hover::before,
-.btn-16:hover::after {
+.btn-16:is(:hover, :focus)::before,
+.btn-16:is(:hover, :focus)::after {
   height: 100%;
   width: 100%;
 }
@@ -671,12 +671,12 @@ button::before {
   transition: all 0.5s;
 }
 
-.btn-17:hover::before {
+.btn-17:is(:hover, :focus)::before {
   opacity: 1;
   transform: rotate(15deg);
 }
 
-.btn-17:hover {
+.btn-17:is(:hover, :focus) {
   color: #fff;
 }
 
@@ -699,7 +699,7 @@ button::before {
   transition: all 0.2s;
 }
 
-.btn-17:hover span::before {
+.btn-17:is(:hover, :focus) span::before {
   color: #fff;
   font-size: 80px;
   transform: rotate(360deg) translate(-120%, -50%);
@@ -739,11 +739,11 @@ button::before {
   right: -100%;
 }
 
-.btn-18:hover::before {
+.btn-18:is(:hover, :focus)::before {
   left: 0;
 }
 
-.btn-18:hover::after {
+.btn-18:is(:hover, :focus)::after {
   right: 0;
 }
 
@@ -770,11 +770,11 @@ button::before {
   top: -100%;
 }
 
-.btn-18:hover span::before {
+.btn-18:is(:hover, :focus) span::before {
   bottom: 0;
 }
 
-.btn-18:hover span::after {
+.btn-18:is(:hover, :focus) span::after {
   top: 0;
 }
 
@@ -802,11 +802,11 @@ button::before {
   z-index: -1;
 }
 
-.btn-wave:hover {
+.btn-wave:is(:hover, :focus) {
   color: #fff;
 }
 
-.btn-wave:hover .wave {
+.btn-wave:is(:hover, :focus) .wave {
   top: 0;
 }
 
@@ -862,11 +862,11 @@ button::before {
   transition: all 0.5s;
 }
 
-.btn-20:hover {
+.btn-20:is(:hover, :focus) {
   color: #fff;
 }
 
-.btn-20:hover span::before {
+.btn-20:is(:hover, :focus) span::before {
   width: 100%;
   background-color: #172554;
   transform: translate(-50%, -50%) rotate(60deg);
@@ -908,13 +908,13 @@ button::before {
   background-color: #1e40af;
 }
 
-.btn-skew:hover::before {
+.btn-skew:is(:hover, :focus)::before {
   top: 0;
   left: 50%;
   transform: skew(0deg);
 }
 
-.btn-skew:hover::after {
+.btn-skew:is(:hover, :focus)::after {
   top: 0;
   right: 50%;
   transform: skew(0deg);
@@ -938,12 +938,12 @@ button::before {
   transition: all 0.4s;
 }
 
-.btn-22:hover::before {
+.btn-22:is(:hover, :focus)::before {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
 
-.btn-22:hover {
+.btn-22:is(:hover, :focus) {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -993,12 +993,12 @@ button::before {
   transform: translateX(100%);
 }
 
-.btn-23:hover::before,
-.btn-23:hover::after {
+.btn-23:is(:hover, :focus)::before,
+.btn-23:is(:hover, :focus)::after {
   transform: translateX(0);
 }
 
-.btn-23:hover {
+.btn-23:is(:hover, :focus) {
   color: #fff;
 }
 
@@ -1045,7 +1045,7 @@ button::before {
   transition: all 0.5s;
 }
 
-.btn-glow:hover::before {
+.btn-glow:is(:hover, :focus)::before {
   opacity: 1;
 }
 
@@ -1085,7 +1085,7 @@ button::before {
   -webkit-box-reflect: below -1px linear-gradient(transparent, #03e9f4);
   transition: all 0.5s;
 
-  &:hover {
+  &:is(:hover, :focus) {
     background-color: #03e9f4;
     color: #fff;
     box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
@@ -1204,7 +1204,7 @@ button::before {
   transition: all 0.3s;
   overflow: hidden;
 
-  &:hover {
+  &:is(:hover, :focus) {
     color: #fff;
     background: #64748b;
     animation: shake 0.3s linear 1;
@@ -1222,5 +1222,47 @@ button::before {
 
   100% {
     transform: rotate(10deg);
+  }
+}
+
+/* BUTTON-6 */
+.btn-animate {
+  transition: all 1s;
+  border: 1.5px solid #ef4444;
+  color: #ef4444;
+  border-radius: 0;
+  overflow: hidden;
+  background: none;
+  box-shadow: none;
+}
+
+.btn-animate::before {
+  left: 0;
+  height: 100%;
+  width: 30%;
+  border-radius: 0;
+  transform: skew(-15deg);
+  background-color: #ef4444;
+  animation: move 0.75s infinite linear;
+  transition: all 0.5s;
+}
+
+.btn-animate:is(:hover, :focus) {
+  color: #fff;
+  &::before {
+    animation: none;
+    transform: none;
+    // left: -10%;
+    width: 120%;
+  }
+}
+
+@keyframes move {
+  0% {
+    left: -30%;
+  }
+
+  100% {
+    left: 100%;
   }
 }
