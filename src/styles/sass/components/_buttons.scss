@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 50px;
+  row-gap: 75px;
   justify-items: center;
 }
 
@@ -1188,5 +1189,38 @@ button::before {
   50%,
   100% {
     bottom: 100%;
+  }
+}
+
+// Button Shake
+.btn-shake {
+  color: #64748b;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid #64748b;
+  transition: all 0.3s;
+  overflow: hidden;
+
+  &:hover {
+    color: #fff;
+    background: #64748b;
+    animation: shake 0.3s linear 1;
+  }
+}
+
+@keyframes shake {
+  33% {
+    transform: rotate(10deg);
+  }
+
+  66% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
   }
 }

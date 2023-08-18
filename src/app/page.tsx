@@ -58,6 +58,7 @@ export default function Home() {
           Hover Me
         </button>
         <button className="btn-24 btn-glow">Hover Me</button>
+        <button className="btn-shake">Hover Me</button>
       </main>
 
       <footer className="mt-12 mb-8 attribution">
