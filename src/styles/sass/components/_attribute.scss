@@ -1,12 +1,8 @@
-@use 'sass';
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .attribution {
   text-align: center;
   font-size: 14px;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
 
   a {
     text-decoration: none;
@@ -22,7 +18,7 @@
       left: auto;
       right: 0;
       width: 0%;
-      height: 1px;
+      height: 1.25px;
       background-color: #64748b;
       transition: all 0.5s;
     }

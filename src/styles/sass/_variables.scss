@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 :root {
   @font-face {
     font-family: 'CerebriSansPro';
@@ -35,12 +37,28 @@
     font-weight: 800;
   }
 
-  --color-bg: #efefef;
+  --color-bg: #fff;
   --color-bg-dark: rgba(0, 0, 0, 0.65);
   --color-accent: #14cf93;
-  --color-text: #1e293b;
+  --color-light: #fff;
+  --color-text: #475569;
   --color-dark: #020617;
   --color-grey-1: #f3f4f6;
   --color-grey-2: #4c5c68;
   --color-grey-3: #0f172a;
+
+  // FONTS
+  --font-primary: 'CerebriSansPro', 'Inter', sans-serif;
+  --font-size: 1.6rem; // 16px
+
+  // Size
+  --max-width: 128rem; // 1280px
 }
+
+// BREAK POINTS (ems)
+$xxl: math.div(1536, 16) * 1em;
+$xl: math.div(1280, 16) * 1em;
+$lg: math.div(1024, 16) * 1em;
+$md: math.div(768, 16) * 1em;
+$sm: math.div(640, 16) * 1em;
+$xs: math.div(330, 16) * 1em;
