@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/badge/Version-1.0.0-blue"/>
 </p>
 
-[![Preview](https://buttons-animations-kv.vercel.app/og.png)](https://image-animations.vercel.app/)
+[![Preview](https://buttons-animations-kv.vercel.app/og.png)](https://buttons-animations-kv.vercel.app/)
 
 ## Built With
 
